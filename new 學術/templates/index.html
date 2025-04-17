@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank"> 
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1">Ian -- 李承燁</div>
+        <div class="box2">帥哥</div>
+        <div class="box3">✌️✌️</div>
+        
+    </div>
+    <div class="main">
+        <p></p>
+        <h1>這是我的第一個網頁</h1>
+        <p><br><br>I'm Ian</p>
+    </div>
+    <form action="/update" method="post" name="search">
+        <label for="account">Google 學術搜尋: </label>
+        <input type="text" name="name"  placeholder="輸入" id="account"/>
+        <input type="submit" value="submit" />
+    </form>
+   <!--  <form action="/image" method="post" >
+    </form> -->
+    <br>
+    <form action="/static/images/gura.jpeg" method="get" target="_blank">
+        <label for="account">評分: </label>
+        <input type="text" name="name"  placeholder="輸入" id="account"/>
+    </form> 
+ <!--    <button onclick="myFunction();">開啟輸入視窗</button>
+    <h2 onclick="myFunction();">開啟輸入視窗</h2>
+
+    <script>
+    var myFunction = function(){
+        let answer = prompt('請輸入內容');
+        let yt = "https://www.youtube.com"
+        let url =$yt$answer
+        document.location.href=answer;
+        redirect("http://www.royalairways.com/lw/apps/newhome.html")
+        alert(answer);
+    }-->
+    <!-- <h2>https://steam.oxxostudio.tw/category/html/example/youtube.html 引片鑲嵌</h2> -->
+    <br>
+    <button onclick="myFunction();">開啟Youtube輸入視窗</button>  
+    <script>
+      var myFunction = function(){
+        var answer = prompt('請輸入內容');
+        var hello = 'Hello, ';
+        // 輸出 'Hello, Mike have a nice day.'
+        let web= "https://www.youtube.com/results?search_query=" + answer;
+        let a="https://www.youtube.com/@GawrGura"
+        location.href=web;
+        alert(web);
+      }
+    </script> 
+    <!-- <script>
+        location.href="https://www.youtube.com/watch?v=nCQ_zZIiGLA";    
+    </script> -->
+    <!-- <button onclick="showDialog();">聯絡資訊</button>
+    <div class="dialog" id="dialog">
+    <div class="close" onclick="hideDialog();" id="x">x</div>
+    在這裡加入對話框內容
+    </div> -->
+        <ul>
+            <li>個資</li>
+            <ol>
+                <li>性別:秘密</li>
+                <li>年紀:秘密</li>
+                <li>身高:秘密</li>
+                <li>體重:秘密</li>
+            </ol>
+            <li>興趣</li>
+            <ol>
+                <li>看小說</li>
+                <li>玩手遊</li>
+                <li>看Hololive</li>
+            </ol>
+        </ul>
+    
+    <table>
+        <tr><th colspan="3" id="cool" >lady</th></tr>
+        <tr>
+            <th>名字</th>
+            <th>別名</th>
+            <th>可愛程度</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.youtube.com/@GawrGura">Gawr Gura</a></td>
+            <td><a href="https://www.youtube.com/@GawrGura">鯊鯊</a></td>
+            <td>∞</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.youtube.com/@MinatoAqua">湊あくあ </a></td>
+            <td><a href="https://www.youtube.com/@MinatoAqua">aqua</a></td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.youtube.com/@NakiriAyame">百鬼あやめ</a></td>
+            <td><a href="https://www.youtube.com/@NakiriAyame">大小姐</a></td>
+            <td>99</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr><th colspan="5">歌曲</th></tr>
+        <tr>
+            <th>曲名</th>
+            <td><a href="https://www.youtube.com/watch?v=nCQ_zZIiGLA">REFLECT</a></td>
+            <td><a href="https://www.youtube.com/watch?v=S1Ln9-ksIQY">君の最推しにしてよ</a></td>
+            <td><a href="https://www.youtube.com/watch?v=O8xKpOi_QAs">ビビビ</a></td>
+            <td><a href="https://www.youtube.com/watch?v=6bnaBnd4kyU">あくあ色ぱれっと</a></td>
+        </tr>
+        <tr>
+            <th>MV</th>
+            <td><a href="https://www.youtube.com/watch?v=nCQ_zZIiGLA"><img src="/static/images/reflect.jpeg" width="170.9" height="170.9"></a></td>
+            <!-- <td><a href="https://www.youtube.com/watch?v=nCQ_zZIiGLA"><img src="/static/images/reflect.jpeg" width="170.9" height="170.9"></a></td> -->
+            <td><a href="https://www.youtube.com/watch?v=S1Ln9-ksIQY"><img src="/static/images/君の最推しにしてよ.jpg"width="227.9px" height="170.9px"></a></td>
+            <td><a href="https://www.youtube.com/watch?v=O8xKpOi_QAs"><iframe width="302" height="170.9" src="https://www.youtube.com/embed/O8xKpOi_QAs?si=yq_5qtWZX5_i33Ec&autoplay=1&mute=1&rel=0&loop=1&playlist=O8xKpOi_QAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a></td>
+            <!-- <td><a href="https://www.youtube.com/watch?v=O8xKpOi_QAs"><iframe width="302" height="170.9" src="https://www.youtube.com/embed/O8xKpOi_QAs?si=lXxcZMrX7wzYKq04?&autoplay=1&loop=1&playlist=O8xKpOi_QAs?si=lXxcZMrX7wzYKq04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a></td> -->
+            <td><a href="https://www.youtube.com/watch?v=6bnaBnd4kyU"><img src="/static/images/あくあ色ぱれっと 3.jpg"width="170.9px" height="170.9px"></a></td>
+        </tr>
+        <tr>
+            <th>演唱者</th>
+            <td><a href="https://www.youtube.com/@GawrGura">Gawr Gura<br><img src="/static/images/gura.jpeg"width="120px" height="170.9px"></a></td>
+            <td><a href="https://www.youtube.com/@MinatoAqua">湊あくあ <br><img src="/static/images/湊あくあ 7.jpg"width="180px" height="170.9px"></a></td>
+            <td><a href="https://www.youtube.com/@NakiriAyame">百鬼あやめ<br><img src="/static/images/百鬼あやめ 7.jpg"width="300px" height="170.9px"></a></td>
+            <td><a href="https://www.youtube.com/@MinatoAqua">湊あくあ <br><img src="/static/images/湊あくあ 1.jpg"width="120px" height="170.9px"></a></td>
+        </tr>
+    </table>
+    <br>
+    <!-- <button onclick="myFunction();">開啟Youtube輸入視窗</button>  
+    <script>document.location.href="http://127.0.0.1:5500";</script> -->
+    <!-- <meta http-equiv="refresh" content="0;url="https://www.youtube.com/@NakiriAyame"> -->
+    <!-- <meta http-equiv="refresh" content="0;url="http://127.0.0.1:5500/templates/data.html">  -->
+    <!-- <a href="https://www.youtube.com/watch?v=EoRLHsdhkCA">ダダダダ天使 </a>
+    <img src="/static/images/gura.jpeg"width="120px" height="170.9px">  -->
+    <!-- <iframe width="302" height="170.9" src="https://www.youtube.com/embed/O8xKpOi_QAs?si=yq_5qtWZX5_i33Ec&autoplay=1&rel=0&loop=1&playlist=O8xKpOi_QAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <button onclick="allFunction();">切換至程式資料夾</button>  
+    <script>
+      var allFunction = function(){
+            document.location.href="http://127.0.0.1:5500";
+      }
+    </script> 
+    <button onclick="pyFunction();">切換至Python</button>  
+    <script>
+      var pyFunction = function(){
+            document.location.href="http://127.0.0.1:5500/shark/shark.html";
+      }
+    </script> 
+    <button onclick="imageFunction();">圖庫</button>  
+    <script>
+      var imageFunction = function(){
+            document.location.href="http://127.0.0.1:5000/image";
+      }
+      
+    </script> 
+    <!-- <form action="/update" method="post" name="search">
+        <label for="account">Google 學術搜尋: </label>
+        <input type="text" name="name"  placeholder="輸入" id="account"/>
+        <input type="submit" value="submit" />
+    </form> -->
+    
+</body> 
+</html>
